@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_5" data-name="Layer 5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 328.95 242.68">
+<svg id="Layer_5" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 43.94 25.24">
+  <!-- Generator: Adobe Illustrator 29.8.4, SVG Export Plug-In . SVG Version: 2.1.1 Build 6)  -->
   <defs>
     <style>
-      .cls-1 {
+      .st0 {
         fill: #fff;
       }
 
-      .cls-1, .cls-2 {
+      .st0, .st1 {
         stroke: #000;
         stroke-miterlimit: 10;
         stroke-width: .93px;
       }
 
-      .cls-2 {
+      .st1 {
         fill: none;
       }
     </style>
   </defs>
-  <rect class="cls-1" x="36.99" y="178.26" width="43.94" height="25.24"/>
-  <path class="cls-2" d="M37.36,178.86h0c7.14,5.55,14.28,11.1,21.42,16.65h0c7.14-5.55,14.28-11.1,21.42-16.65h0"/>
+  <rect class="st0" width="43.94" height="25.24"/>
+  <path class="st1" d="M.37.6H.37c7.14,5.55,14.28,11.1,21.42,16.65h0c7.14-5.55,14.28-11.1,21.42-16.65h0"/>
 </svg>

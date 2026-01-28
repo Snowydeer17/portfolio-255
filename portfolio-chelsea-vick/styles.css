@@ -39,13 +39,7 @@ body{
 }
 
 .icon{
-  font-size: 12px;
-  text-decoration: none;
-  color: var(--text);
   padding: 6px 8px;
-  border-radius: 999px;
-  background: rgba(255,255,255,0.4);
-  border: 1px solid rgba(0,0,0,0.08);
 }
 
 .icon img{
@@ -57,7 +51,12 @@ body{
 
 }
 
-.icon:hover{ background: rgba(255,255,255,0.7); }
+.icon:hover img{ 
+ filter:
+ drop-shadow(0 0 4px rgba(255, 154, 47, 0.8))
+ drop-shadow(0 0 8px rgba(255, 154, 47, 0.6));
+transform: scale(1.1);
+}
 
 .brand{
   justify-self: center;
