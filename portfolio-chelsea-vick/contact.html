@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact • Robotic Kirin</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+    <div class="header-inner">
+      <div class="social">
+        
+        <a href="https://instagram.com/cj_vick" aria-label="Instagram" class="icon">
+          <img src="images/social/insta-logo.svg" alt="instagram"/></a>
+
+        <a href="https://tiktok.com/@snowydeeri" aria-label="TikTok" class="icon">
+          <img src="images/social/tiktok-logo.svg" alt="tiktok"/></a>
+
+        <a href="https://youtube.com/@SnowyDeerIsHere" aria-label="YouTube" class="icon">
+          <img src="images/social/yt-logo.svg" alt="youtube"/></a>
+
+        <a href="mailto:jol223@hotmail.com" aria-label="Email" class="icon">
+          <img src="images/social/email-logo.svg" alt="email"/></a>
+        
+      </div>
+
+      <a class="brand" href="index.html"aria-label="Robotic Kirin Home">
+        <img src="images/port-logos-assets.svg" alt="Robotic Kirin" />
+      </a>
+
+
+    <div></div>
+  </div>
+
+  <nav class="site-nav" aria-label="Primary">
+    <a href="index.html">Illustrations</a>
+    <a href="https://www.etsy.com/shop/YOURSHOPNAME" target="_blank" rel="noopener">Store</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" aria-current="page">Contact</a>
+  </nav>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+</header>
+
+<main class="page">
+  <section class="contact">
+    <h1>Contact</h1>
+
+    <form class="contact-form"
+      action="mailto:YOURNAME@EMAIL.COM"
+      method="post"
+      enctype="text/plain">
+
+      <label>
+        Name <span class="req">(required)</span>
+        <div class="name-row">
+          <input type="text" name="First Name" placeholder="First Name" required>
+          <input type="text" name="Last Name" placeholder="Last Name" required>
+        </div>
+      </label>
+
+      <label>
+        Email <span class="req">(required)</span>
+        <input type="email" name="Email" required>
+      </label>
+
+      <label class="checkbox-row">
+        <input type="checkbox" name="Newsletter">
+        <span>Sign up for news and updates</span>
+      </label>
+
+      <label>
+        Subject <span class="req">(required)</span>
+        <input type="text" name="Subject" required>
+      </label>
+
+      <label>
+        Message <span class="req">(required)</span>
+        <textarea name="Message" rows="6" required></textarea>
+      </label>
+
+      <button class="btn" type="submit">Submit</button>
+    </form>
+
+    <p class="contact-note">
+      (This form opens your email app to send the message.)
+    </p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <small>© <span id="year"></span> Robotic Kirin Entertainment LLC</small>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
