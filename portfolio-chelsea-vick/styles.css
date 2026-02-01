@@ -20,6 +20,10 @@ body{
 .site-header{
   background: linear-gradient(to bottom, var(--header-accent) 0 110px, #a2b3dd 110px 100%);
   border-bottom: 1px solid rgba(0,0,0,0.06);
+  position: sticky;
+  top: 0;
+  z-index: 5000;
+
 }
 
 .header-inner{
@@ -30,6 +34,7 @@ body{
   grid-template-columns: 1fr auto 1fr;
   align-items: start;
 }
+
 
 .social{
   display: flex;
@@ -48,7 +53,6 @@ body{
   display: block;
   filter: none;
   transition: filter o.2s ease, transform 0.2s ease;
-
 }
 
 .icon:hover img{ 
@@ -62,16 +66,22 @@ transform: scale(1.1);
   justify-self: center;
   display: inline-flex;
   padding-top: 2px;
+  position: static;
+  top: 14px;
+  left: 50%;
+  transform: none;
+
+display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .brand img{
   width: 250px;
   height: auto;
   display: block;
-  transform:
-  filter 0.25s ease,
-  transform 0.25s ease
 }
+
 
 .brand:hover img{
   filter:
@@ -110,7 +120,10 @@ transform: scale(1.1);
   max-width: var(--page-max);
   margin: 0 auto;
   padding: 24px 18px 44px;
+  padding-top: 24px;
 }
+
+
 
 /* GALLERY GRID */
 .gallery{
@@ -125,7 +138,7 @@ transform: scale(1.1);
   position: relative;
   width: 100%;
   aspect-ratio: 1 / 1;
-  border-radius: var(--tile-radius);
+  border-radius: 12px;
   overflow: hidden;
   background: #1a1f3a; /* fallback when no image */
   border: 1px solid rgba(0,0,0,0.08);
@@ -138,13 +151,98 @@ transform: scale(1.1);
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 160ms ease, opacity 160ms ease;
+  transition: transform 0.3s ease;
+}
+
+.tile-title{
+ position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.55);
+  color: white;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+.tile{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.tile img{
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.tile-title{
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.55);
+  color: white;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 0.25s ease;
 }
 
 .tile:hover img{
-  transform: scale(1.03);
+  transform: scale(1.05);
+}
+
+.tile:hover .tile-title{
+  opacity: 1;
+}
+
+.tile:hover img{
+  transform: scale(1.05);
   opacity: 0.95;
 }
+
+.lightbox{
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 5000;
+}
+
+.lightbox img{
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 12px;
+}
+
+.lightbox p{
+  color: white;
+  margin-top: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.lightbox .close{
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
+}
+
+
 
 /* FOOTER */
 .site-footer{
